@@ -7,7 +7,6 @@ import 'features/level/level.dart';
 import 'features/animation/animation.dart'; // Mengimpor file animasi
 import 'features/sound/sound.dart'; // Mengimpor file suara
 import 'features/settings/settings.dart';
-import 'widget/interstitial_ad_widget.dart'; // Mengimpor file pengaturan
 
 void main() {
   runApp(MaterialApp(
@@ -177,21 +176,10 @@ class _FruitCrushHomePageState extends State<FruitCrushHomePage> {
       dialogType: DialogType.error,
       animType: AnimType.topSlide,
       title: 'Game Over',
-      desc: 'Your score: $score',
+      desc: 'score kamu: $score',
       btnOkOnPress: () {
-        // Tampilkan widget iklan interstitial
-        showDialog(
-          context: context,
-          builder: (BuildContext context) {
-            return interstitialAd(
-              onAdClosed: () {
-                // Setelah iklan ditutup, restart permainan dan kembali ke halaman utama
-                restartGame();
-                Navigator.of(context).popUntil((route) => route.isFirst);
-              },
-            );
-          },
-        );
+        // Restart the game
+        restartGame();
       },
       dismissOnTouchOutside: false,
     ).show();
