@@ -7,5 +7,8 @@ ikuti langkah langkah untuk Cara unduhnya
 > cd fruitgameflutter
 
 
-Uploading WhatsApp Video 2024-04-14 at 10.47.41.mp4…
+
+https://github.com/tomflutter/fruitgameflutter/assets/116769915/6d67433c-0c78-491e-81d4-88ddf557af95
+
+
 
