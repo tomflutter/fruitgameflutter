@@ -257,6 +257,8 @@ class _FruitCrushHomePageState extends State<FruitCrushHomePage> {
     );
   }
 
+  // Gratisan
+
   @override
   void dispose() {
     timer.cancel();
